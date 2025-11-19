@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عجلة الحظ الراقية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <button class="open-popup" aria-label="افتح عجلة الحظ">
+        جرّب حظك الآن
+      </button>
+
+      <section class="popup visible" aria-live="polite">
+        <div class="popup-card" role="dialog" aria-modal="true">
+          <button class="close-popup" aria-label="إغلاق">×</button>
+          <header>
+            <p class="eyebrow">بوب أب حصري</p>
+            <h1>عجلة حظ مزاجها رايق</h1>
+            <p class="intro">
+              خمس فرص لطيفة بانتظارك، واثنتان منها تحملان أكواد خصم مميزة.
+              اضغط على زر اللف وشاهد ما ستختاره العجلة لك.
+            </p>
+          </header>
+
+          <div class="wheel-shell">
+            <div class="wheel" id="wheel" aria-hidden="true"></div>
+            <div class="pointer" aria-hidden="true"></div>
+          </div>
+
+          <button class="spin-btn" type="button">لف العجلة</button>
+
+          <div class="result" aria-live="assertive">
+            <p class="result-text">اختر لف العجلة لمعرفة نتيجتك.</p>
+            <div class="discount" hidden>
+              <span class="discount-code" dir="ltr"></span>
+              <button class="copy-btn" type="button">انسخ الكود</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
